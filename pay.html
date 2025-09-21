@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Vytek Academy</title>
+    <meta name="description" content="Complete your course payment securely via UPI or QR code scanning.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Vytek Academy</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero slide-in">
+            <h1>Complete Your Payment</h1>
+            <p>Secure payment via UPI. Scan the QR code or click the UPI link below.</p>
+        </section>
+
+        <section class="payment-section">
+            <h2>Payment Instructions</h2>
+            
+            <!-- Course-specific payment content -->
+            <div id="payment-content">
+                <div id="digital-marketing-payment" style="display: none;">
+                    <h3>30-day Digital Marketing Bootcamp</h3>
+                    <div class="course-price">₹1,999</div>
+<img src="img/qr-digital-marketing.png" alt="Digital Marketing QR" class="qr-code">
+                    <p><strong>Scan QR or click UPI link to pay</strong></p>
+                    <a href="upi://pay?pa=anjitha.ajith1312@oksbi&pn=Vytek+Academy&am=1999&cu=INR&tn=Digital+Marketing+Bootcamp" class="upi-link">Pay via UPI (open in UPI app)</a>
+                </div>
+
+                <div id="data-science-payment" style="display: none;">
+                    <h3>Data Science Course</h3>
+                    <div class="course-price">₹99</div>
+<img src="img/qr-data-science.png" alt="Data Science QR" class="qr-code">
+                    <p><strong>Scan QR or click UPI link to pay</strong></p>
+                    <a href="upi://pay?pa=anjitha.ajith1312@oksbi&pn=Vytek+Academy&am=99&cu=INR&tn=Data+Science+Course" class="upi-link">Pay via UPI (open in UPI app)</a>
+                </div>
+
+                <div id="cloud-computing-payment" style="display: none;">
+                    <h3>Cloud Computing Course</h3>
+                    <div class="course-price">₹99</div>
+<img src="img/qr-cloud-computing.png" alt="Cloud Computing QR" class="qr-code">
+                    <p><strong>Scan QR or click UPI link to pay</strong></p>
+                    <a href="upi://pay?pa=anjitha.ajith1312@oksbi&pn=Vytek+Academy&am=99&cu=INR&tn=Cloud+Computing+Course" class="upi-link">Pay via UPI (open in UPI app)</a>
+                </div>
+
+                <div id="computer-networks-payment" style="display: none;">
+                    <h3>Computer Networks Course</h3>
+                    <div class="course-price">₹99</div>
+<img src="img/qr-computer-networks.png" alt="Computer Networks QR" class="qr-code">
+                    <p><strong>Scan QR or click UPI link to pay</strong></p>
+                    <a href="upi://pay?pa=anjitha.ajith1312@oksbi&pn=Vytek+Academy&am=99&cu=INR&tn=Computer+Networks+Course" class="upi-link">Pay via UPI (open in UPI app)</a>
+                </div>
+
+                <div id="ai-ml-payment" style="display: none;">
+                    <h3>AI & ML Course</h3>
+                    <div class="course-price">₹99</div>
+<img src="img/qr-ai-ml.png" alt="AI & ML QR" class="qr-code">
+                    <p><strong>Scan QR or click UPI link to pay</strong></p>
+                    <a href="upi://pay?pa=anjitha.ajith1312@oksbi&pn=Vytek+Academy&am=99&cu=INR&tn=AI+ML+Course" class="upi-link">Pay via UPI (open in UPI app)</a>
+                </div>
+
+                <!-- Default payment content -->
+                <div id="default-payment">
+                    <h3>Select a Course</h3>
+                    <p>Choose a course to proceed with payment.</p>
+                    <a href="courses.html" class="btn">Browse Courses</a>
+                </div>
+            </div>
+
+            <p class="mt-3"><em>This is a placeholder payment system. The UPI link will open your UPI app on supported devices.</em></p>
+        </section>
+
+        <!-- Policy Agreement Section -->
+        <section class="policy-content">
+    <h3>Terms and Conditions</h3>
+    <p>Before proceeding with payment, please read and accept our terms:</p>
+    
+   <form action="enroll.html" method="get" id="payment-form">
+        <div class="checkbox-group">
+            <input type="checkbox" id="policy-agreement" name="policy-agreement" required>
+            <label for="policy-agreement">
+                I have read and agree to the Terms and Conditions.
+            </label>
+        </div>
+        
+        <p class="mb-2">
+            <a href="policy.html" target="_blank">Read our full policy here</a>
+        </p>
+        
+        <button type="submit" class="btn btn-warning">Proceed to Enrollment Form</button>
+    </form>
+</section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Follow as on <a href="https://www.instagram.com/vytek.academy/" target="_blank" rel="noopener">Instagram</a> and <a href="https://www.facebook.com/vytek.academy/" target="_blank" rel="noopener">Facebook</a></p>
+        </div>
+    </footer>
+
+    <!-- Show payment content based on URL hash -->
+    <style>
+        #digital-marketing-payment:target,
+        #data-science-payment:target,
+        #cloud-computing-payment:target,
+        #computer-networks-payment:target,
+        #ai-ml-payment:target {
+            display: block !important;
+        }
+        
+        #digital-marketing-payment:target ~ #default-payment,
+        #data-science-payment:target ~ #default-payment,
+        #cloud-computing-payment:target ~ #default-payment,
+        #computer-networks-payment:target ~ #default-payment,
+        #ai-ml-payment:target ~ #default-payment {
+            display: none;
+        }
+        
+        /* Map course hashes to payment sections */
+        body:target-within #digital-marketing-payment { display: block; }
+        body:target-within #default-payment { display: none; }
+    </style>
+    
+    <!-- Simple hash-based content switching -->
+    <script>
+        // This is the only JavaScript - for hash-based content switching
+        // In a purely CSS-only version, this would be handled differently
+        document.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash.substring(1);
+            const paymentSections = ['digital-marketing', 'data-science', 'cloud-computing', 'computer-networks', 'ai-ml'];
+            
+            // Hide all payment sections first
+            paymentSections.forEach(section => {
+                const element = document.getElementById(section + '-payment');
+                if (element) element.style.display = 'none';
+            });
+            
+            // Hide default payment
+            const defaultPayment = document.getElementById('default-payment');
+            if (defaultPayment) defaultPayment.style.display = 'none';
+            
+            // Show relevant section or default
+            if (hash && paymentSections.includes(hash)) {
+                const targetSection = document.getElementById(hash + '-payment');
+                if (targetSection) targetSection.style.display = 'block';
+            } else {
+                if (defaultPayment) defaultPayment.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

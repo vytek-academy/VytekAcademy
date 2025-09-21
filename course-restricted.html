@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Restricted - Vytek Academy</title>
+    <meta name="description" content="This course content is restricted. Purchase the course to access full content.">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Vytek Academy</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Restricted Notice -->
+        <div class="restricted-notice slide-in">
+            <h2>COURSE RESTRICTED — PAY NOW</h2>
+            <p>This course content is available only to enrolled students. Purchase the course to access all lessons, materials, and resources.</p>
+            <a href="pay.html" class="btn btn-warning">Pay Now</a>
+        </div>
+
+        <!-- Course Preview Content -->
+        <section id="course-preview">
+            <!-- Content will be displayed based on URL hash/query -->
+            <!-- In a real application, this would be populated dynamically -->
+            
+            <div class="course-card" style="text-align: center;">
+               
+                <h2 class="course-title">Course Preview</h2>
+                
+                <div id="digital-marketing" style="display: none;">
+                    <h3>30-day Digital Marketing Bootcamp</h3>
+                    <div class="course-price">₹1,999</div>
+                    <p>This comprehensive bootcamp covers:</p>
+                    <ul>
+                        <li>Search Engine Optimization (SEO)</li>
+                        <li>Search Engine Marketing (SEM)</li>
+                        <li>Social Media Marketing</li>
+                        <li>Content Marketing Strategy</li>
+                        <li>Email Marketing Campaigns</li>
+                        <li>Analytics and Performance Tracking</li>
+                        <li>Conversion Rate Optimization</li>
+                    </ul><br>
+                    <a href="pay.html#digital-marketing" class="btn btn-warning">Purchase Course - ₹1,999</a>
+                </div>
+
+                <div id="data-science" style="display: none;">
+                    <h3>Data Science</h3>
+                    <div class="course-price">₹99</div>
+                    <p>Learn the fundamentals of data science including:</p>
+                    <ul>
+                        <li>Statistical Analysis and Probability</li>
+                        <li>Data Visualization Techniques</li>
+                        <li>Python Programming for Data Science</li>
+                        <li>Machine Learning Basics</li>
+                        <li>Data Cleaning and Preprocessing</li>
+                        <li>Predictive Modeling</li>
+                    </ul><br>
+                    <a href="pay.html#data-science" class="btn btn-warning">Purchase Course - ₹99</a>
+                </div>
+
+                <div id="cloud-computing" style="display: none;">
+                    <h3>Cloud Computing</h3>
+                    <div class="course-price">₹99</div>
+                    <p>Master cloud technologies and services:</p>
+                    <ul>
+                        <li>AWS, Azure, and Google Cloud Platform</li>
+                        <li>Cloud Architecture and Design</li>
+                        <li>Deployment and Migration Strategies</li>
+                        <li>Cloud Security Best Practices</li>
+                        <li>Cost Optimization Techniques</li>
+                        <li>DevOps and CI/CD in the Cloud</li>
+                    </ul><br>
+                    <a href="pay.html#cloud-computing" class="btn btn-warning">Purchase Course - ₹99</a>
+                </div>
+
+                <div id="computer-networks" style="display: none;">
+                    <h3>Computer Networks</h3>
+                    <div class="course-price">₹99</div>
+                    <p>Comprehensive networking course covering:</p>
+                    <ul>
+                        <li>Network Fundamentals and Protocols</li>
+                        <li>TCP/IP Protocol Suite</li>
+                        <li>Routing and Switching</li>
+                        <li>Network Security and Firewalls</li>
+                        <li>Wireless Networking Technologies</li>
+                        <li>Network Troubleshooting</li>
+                    </ul><br>
+                    <a href="pay.html#computer-networks" class="btn btn-warning">Purchase Course - ₹99</a>
+                </div>
+
+                <div id="ai-ml" style="display: none;">
+                    <h3>AI & ML</h3>
+                    <div class="course-price">₹99</div>
+                    <p>Explore artificial intelligence and machine learning:</p>
+                    <ul>
+                        <li>Introduction to AI and ML Concepts</li>
+                        <li>Machine Learning Algorithms</li>
+                        <li>Neural Networks and Deep Learning</li>
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision Applications</li>
+                        <li>Practical Implementation with Python</li>
+                    </ul><br>
+                    <a href="pay.html#ai-ml" class="btn btn-warning">Purchase Course - ₹99</a>
+                </div>
+
+                <!-- Default content when no specific course is identified -->
+                <div id="default-preview">
+                    <p>Select a course to view its detailed curriculum and pricing information.</p>
+                    <a href="courses.html" class="btn btn-secondary">Browse All Courses</a>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Follow as on <a href="https://www.instagram.com/vytek.academy/" target="_blank" rel="noopener">Instagram</a> and <a href="https://www.facebook.com/vytek.academy/" target="_blank" rel="noopener">Facebook</a></p>
+        </div>
+    </footer>
+
+    <!-- Simple CSS-only approach to show course content based on URL hash -->
+    <style>
+        /* Show course content based on URL hash */
+        #digital-marketing:target,
+        #data-science:target,
+        #cloud-computing:target,
+        #computer-networks:target,
+        #ai-ml:target {
+            display: block !important;
+        }
+        
+        /* Hide default preview when a specific course is targeted */
+        #digital-marketing:target ~ #default-preview,
+        #data-science:target ~ #default-preview,
+        #cloud-computing:target ~ #default-preview,
+        #computer-networks:target ~ #default-preview,
+        #ai-ml:target ~ #default-preview {
+            display: none;
+        }
+    </style>
+</body>
+</html>

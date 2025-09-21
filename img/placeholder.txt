@@ -1,0 +1,15 @@
+This directory contains placeholder images for the 5 courses:
+- digital-marketing.jpg
+- data-science.jpg  
+- cloud-computing.jpg
+- computer-networks.jpg
+- ai-ml.jpg
+
+And QR code placeholders:
+- qr-digital-marketing.png
+- qr-data-science.png
+- qr-cloud-computing.png
+- qr-computer-networks.png
+- qr-ai-ml.png
+
+In a real deployment, these would be actual course images and generated QR codes.

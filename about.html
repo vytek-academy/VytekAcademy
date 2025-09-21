@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Vytek Academy</title>
+    <meta name="description" content="Learn about Vytek Academy's mission to provide quality digital education and skill development.">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins''Lato';
+}
+
+body {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Navigation */
+header {
+  background: #0d1b2a;
+  padding: 15px 50px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffdd57;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ffdd57;
+  border-bottom: 2px solid #ffdd57;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Course Card Section */
+.course-card {
+  background: #1b2a49;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  animation: fadeIn 1.5s ease;
+}
+
+.course-card h2, .course-card h3 {
+  color: #ffdd57;
+  margin-bottom: 15px;
+}
+
+.course-card ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.course-card ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.course-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ffdd57;
+}
+
+/* Policy Section */
+.policy-content {
+  background: #162447;
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 850px;
+  border-left: 5px solid #ffdd57;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Payment Section */
+.payment-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.payment-section h3 {
+  font-size: 1.8rem;
+  color: #ffdd57;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 8px;
+  background: #ffdd57;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #f1c40f;
+}
+
+/* Footer */
+footer {
+  background: #0d1b2a;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #ffdd57;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Vytek Academy</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero slide-in">
+            <h1>About Vytek Academy</h1>
+            <p>Empowering learners with cutting-edge digital skills for the modern world.</p>
+        </section>
+
+        <section>
+            <div class="course-card slide-in">
+                <h2>Our Mission</h2>
+                <p>At Vytek Academy, we believe in democratizing digital education. Our mission is to provide high-quality, affordable courses that help individuals and professionals stay ahead in the rapidly evolving digital landscape.</p>
+                
+                <h3>What We Offer</h3>
+                <ul>
+                    <li><strong>Comprehensive Courses:</strong> From digital marketing to AI & ML, our curriculum covers the most in-demand skills.</li>
+                    <li><strong>AI-Enhanced Learning:</strong> Our courses leverage AI technology to provide efficient and effective learning experiences.</li>
+                    <li><strong>Practical Focus:</strong> Every course includes hands-on projects and real-world applications.</li>
+                    <li><strong>Affordable Pricing:</strong> Quality education shouldn't be expensive. Most of our courses are priced at just ₹99.</li>
+                    <li><strong>Flexible Learning:</strong> Learn at your own pace with 24/7 access to course materials.</li>
+                </ul>
+
+                <h3>Our Courses</h3>
+                <p>We specialize in five key areas:</p>
+                <ul>
+                    <li><strong>Digital Marketing:</strong> Master the art of online marketing and grow your business.</li>
+                    <li><strong>Data Science:</strong> Learn to extract insights from data and make data-driven decisions.</li>
+                    <li><strong>Cloud Computing:</strong> Understand cloud platforms and modern infrastructure.</li>
+                    <li><strong>Computer Networks:</strong> Build a strong foundation in networking fundamentals.</li>
+                    <li><strong>AI & Machine Learning:</strong> Explore the future of technology with artificial intelligence.</li>
+                </ul>
+
+                <h3>Why Choose Vytek Academy?</h3>
+                <ul>
+                    <li>Industry-relevant curriculum updated regularly</li>
+                    <li>Self-paced learning with lifetime access</li>
+                    <li>Community support through our social media channels</li>
+                    <li>Certificates upon course completion</li>
+                    <li>No hidden fees or recurring charges</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="policy-content">
+            <h3>Important Notice</h3>
+            <p>Our courses are created using AI technology to provide efficient and up-to-date content. While we strive for accuracy, please note that errors or mistakes may occur. We encourage students to verify information and use multiple resources for comprehensive learning.</p>
+            <p><strong>No refunds are available</strong> on any course purchases. Please review course descriptions carefully before enrolling.</p>
+        </section>
+
+        <section class="payment-section">
+            <h3>Get Started Today</h3>
+            <p>Ready to advance your career? Browse our courses and start learning new skills that matter in today's digital economy.</p>
+            <a href="courses.html" class="btn btn-warning">Explore Courses</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Follow as on <a href="https://www.instagram.com/vytek.academy/" target="_blank" rel="noopener">Instagram</a> and <a href="https://www.facebook.com/vytek.academy/" target="_blank" rel="noopener">Facebook</a></p>
+        </div>
+    </footer>
+</body>
+</html>
